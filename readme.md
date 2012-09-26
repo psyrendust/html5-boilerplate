@@ -6,22 +6,22 @@ This repo contains the html boilerplate, submodules, and build tools that I use 
 
 Clone this repo:
 
-	:::bash
+	```bash
 	git clone --recursive git@github.com:psyrendust/html5-boilerplate.git;
 
 Then run the `setup.sh` to make this ready for a new project. Make sure to add in the ssh repo url as a parameter to the build script:
 
-	:::bash
+	```bash
 	./setup.sh;
 
 Or you can pass in the SSH repo url as a parameter to speed things up:
 
-	:::bash
+	```bash
 	./setup.sh [ssh repo url goes here];
 
 This is what's in the setup.sh file:
 
-	:::bash
+	```bash
 	#!/bin/bash
 
 	# remove this repo's .git config file
@@ -64,7 +64,7 @@ This is what's in the setup.sh file:
 
 You now have a fresh repo with submodules checked out. If you did not pass your ssh repo url as a parameter when running the setup script, you should now run the following to push your first commit;
 
-	:::bash
+	```bash
 	cd /path/to/my/repo
 	git remote add origin [your git repo goes here]
 	git add .

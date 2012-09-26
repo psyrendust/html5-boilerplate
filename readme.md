@@ -8,16 +8,19 @@ Clone this repo:
 
 	```bash
 	git clone --recursive git@github.com:psyrendust/html5-boilerplate.git;
+	```
 
 Then run the `setup.sh` to make this ready for a new project. Make sure to add in the ssh repo url as a parameter to the build script:
 
 	```bash
 	./setup.sh;
+	```
 
 Or you can pass in the SSH repo url as a parameter to speed things up:
 
 	```bash
 	./setup.sh [ssh repo url goes here];
+	```
 
 This is what's in the setup.sh file:
 
@@ -61,6 +64,7 @@ This is what's in the setup.sh file:
 		# push the first commit
 		git push origin master;
 	fi
+	```
 
 You now have a fresh repo with submodules checked out. If you did not pass your ssh repo url as a parameter when running the setup script, you should now run the following to push your first commit;
 
@@ -70,6 +74,7 @@ You now have a fresh repo with submodules checked out. If you did not pass your 
 	git add .
 	git commit -m "initial commit"
 	git push origin master
+	```
 
 Edit the build.sh file to include any files that you would like to process for deployment.
 
